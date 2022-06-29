@@ -1,0 +1,376 @@
+*{
+    margin: 0px;
+}
+
+:root{
+    --dark: #37474F;
+    --text: #C1C2C2;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    color: var(--text);
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+h1:hover{
+    animation-name: navs;
+    animation-duration: 0.5s;
+}
+
+h2{
+    padding-top: 125px;
+}
+
+h3{
+    padding-top: 50px;
+}
+
+ul{
+    position: fixed;
+    top: 25px;
+    left: 720px;
+    width: 100%;
+    z-index:1;
+}
+
+li{
+    display: inline;
+    padding: 40px;
+    text-shadow: 3px 3px 1px #353333;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.5s;
+}
+
+a:hover{
+    color: #898888;
+}
+
+iframe{
+    position: absolute;
+    left: 500px;
+    top: 40px;
+    height: 90%;
+}
+
+.youtube{
+    position: fixed;
+    left: 1700px;
+    top: 15px;
+    z-index: 1;
+}
+
+.facebook{
+    position: fixed;
+    left: 1600px;
+    top: 15px;
+    z-index: 1;
+}
+
+.twitter{
+    position: fixed;
+    left: 1800px;
+    top: 18px;
+    z-index: 1;
+}
+
+.twitter img{
+    height: 35px;
+    width: 35px;
+}
+
+.facebook img{
+    height: 40px;
+    width: 40px;
+}
+
+.youtube img{
+    height: 40px;
+    width: 40px;
+}
+
+.header{
+    position:fixed;
+    width: 100%;
+    height: 70px;
+    background: var(--dark);
+    z-index:1
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    padding-top: 40px;
+    background-color: var(--dark);
+    color: var(--text);
+    text-align: center;
+}
+
+.parallax{
+    background-image: url("grafika/3.jfif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
+.parallax2{
+    background-image: url("grafika/2.jfif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
+.parallax3{
+    background-image: url("grafika/5.jfif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
+.parallax4{
+    background-image: url("grafika/1.jfif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
+.parallax5{
+    background-image: url("grafika/niklas.PNG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
+.parallax6{
+    background-image: url("grafika/richard.PNG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
+.parallax7{
+    background-image: url("grafika/fredrik.PNG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
+.parallax8{
+    background-image: url("grafika/markus.PNG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+
+#transparent{
+    color: transparent;
+    position: absolute;
+    top: 900px;
+}
+
+#transparent2{
+    color: transparent;
+    position: absolute;
+    top: 1900px;
+}
+
+#transparent3{
+    color: transparent;
+    position: absolute;
+    top: 2900px;
+}
+
+#GALERIA{
+    position: absolute;
+    top: 1000px;
+    height: 80%;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--text);
+}
+
+#CZLONKOWIE{
+    position: absolute;
+    top: 2100px;
+    height: 60%;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--text);
+    text-align: center;
+}
+
+#ZESPOL{
+    position: absolute;
+    top: 3200px;
+    height: 400px;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--text);
+}
+
+#CZLONEK{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--text);
+}
+
+#logo{
+    padding-left: 800px;
+    padding-top: 500px;
+    animation-name: bounceIn;
+    animation-duration: 2s;
+}
+
+#logo2{
+    padding-top: 120px;
+}
+
+#tekst1, #tekst2{
+    padding: 130px;
+    font-size: 20px;
+}
+
+#tekst3{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    font-size: 1.2em;
+}
+
+#tekst2::before{
+    content: "Historia zespołu";
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    top: .75em;
+    position: absolute;
+    color: #2A262A;
+    text-shadow: 1px 1px #1A171A;
+}
+
+#Niklas{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #302B2F;
+    top: 150px;
+    left: 220px;
+}
+
+#Richard{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #302B2F;
+    top: 150px;
+    left: 590px;
+}
+
+#Fredrik{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #302B2F;
+    top: 150px;
+    left: 960px;
+}
+
+#Markus{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #302B2F;
+    top: 150px;
+    left: 1330px;
+}
+
+#buttons{
+    position: absolute;
+}
+
+#button_next{
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    background-color: #302B2F;
+    text-align: center;
+    color: var(--text);
+    box-shadow: 5px 5px #353333;
+    padding-top: 40px;
+    border-radius: 25%;
+    left: 1600px;
+    top: 130px;
+}
+
+#button_back{
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    background-color: #302B2F;
+    box-shadow: -5px 5px #353333;
+    text-align: center;
+    color: var(--text);
+    padding-top: 40px;
+    border-radius: 25%;
+    left: 0px;
+    top: 130px;
+}
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0,0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+@keyframes navs {
+    0% {
+        font-style: normal;
+    }
+    20% {
+        font-style: oblique;
+    }
+    40% {
+        font-style: normal;
+    }
+    60% {
+        font-style: oblique;
+    }
+    80% {
+        font-style: normal;
+    }
+    100% {
+        font-style: oblique;
+    }
+  }
